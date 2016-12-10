@@ -1,0 +1,23 @@
+{
+  "name": "todays-schedule",
+  "version": "1.0.0",
+  "description": "\"# Todays-Schedule\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plewacka/Todays-Schedule.git"
+  },
+  "author": "David Plewacki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plewacka/Todays-Schedule/issues"
+  },
+  "homepage": "https://github.com/Plewacka/Todays-Schedule#readme",
+  "dependencies": {
+    "alexa-app": "^2.3.4"
+  },
+  "devDependencies": {}
+}
