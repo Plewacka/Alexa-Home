@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Plewacka/Alexa-Home/issues"
   },
-  "homepage": "https://github.com/Plewacka/Alexa-Home#readme"
+  "homepage": "https://github.com/Plewacka/Alexa-Home#readme",
+  "dependencies": {
+    "alexa-app-server": "^2.3.1"
+  },
+  "devDependencies": {}
 }
