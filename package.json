@@ -1,8 +1,12 @@
 {
   "name": "alexa-home",
   "version": "1.0.0",
-  "description": "alexa-home voice echo control",
+  "description": "alexa echo home voice control",
   "main": "index.js",
+  "dependencies": {
+    "alexa-app-server": "^2.3.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,9 +19,5 @@
   "bugs": {
     "url": "https://github.com/Plewacka/Alexa-Home/issues"
   },
-  "homepage": "https://github.com/Plewacka/Alexa-Home#readme",
-  "dependencies": {
-    "alexa-app-server": "^2.3.1"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/Plewacka/Alexa-Home#readme"
 }
