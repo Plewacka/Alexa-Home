@@ -4,11 +4,13 @@
   "description": "alexa echo home voice control",
   "main": "index.js",
   "dependencies": {
+    "alexa-app": "^2.3.4",
     "alexa-app-server": "^2.3.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
