@@ -21,7 +21,7 @@ app.intent('AMAZON.Readaction<Object@Calednar>',
   {
     "slots":{"day":"DAY"}
 	,"utterances":[ 
-		"show my schedule for {monday|day}"]
+		"read my schedule for {monday|day}"]
   },
   function(request,response) {
     var number = request.slot('day');
