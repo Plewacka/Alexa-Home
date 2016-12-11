@@ -2,11 +2,11 @@ module.change_code = 1;
 'use strict';
 
 var alexa = require( 'alexa-app' );
-var app = new alexa.app( 'todays-schedule' );
+var app = new alexa.app( 'Todays Schedule' );
 
 
 app.launch( function( request, response ) {
-	response.say( 'Welcome to your test skill' ).reprompt( 'Way to go. You got it to run. Bad ass.' ).shouldEndSession( false );
+	response.say( 'Welcome to your Schedule' ).reprompt( 'I can now read your schedule for today.' ).shouldEndSession( false );
 } );
 
 
@@ -17,18 +17,15 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 
-app.intent('sayNumber',
+app.intent('readCalendar',
   {
-    "slots":{"number":"NUMBER"}
+    "slots":{"day":"DAY"}
 	,"utterances":[ 
-		"say the number {1-100|number}",
-		"give me the number {1-100|number}",
-		"tell me the number {1-100|number}",
-		"I want to hear you say the number {1-100|number}"]
+		"show my schedule for {monday|day}"]
   },
   function(request,response) {
-    var number = request.slot('number');
-    response.say("You asked for the number "+number);
+    var number = request.slot('day');
+    response.say("You asked for the day "+day);
   }
 );
 
