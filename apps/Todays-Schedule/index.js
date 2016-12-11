@@ -2,7 +2,7 @@ module.change_code = 1;
 'use strict';
 
 var alexa = require( 'alexa-app' );
-var app = new alexa.app( 'Todays Schedule' );
+var app = new alexa.app( 'todays-schedule' );
 
 
 app.launch( function( request, response ) {
