@@ -17,12 +17,11 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 
-app.intent('AMAZON.ReadAction<Object@Calendar>'), 
-	 "slots":{"Person":"AMAZON.PERSON"},
+app.intent('AMAZON.ReadAction<Object@Calendar>') 
+	 "slots":{"Person":"AMAZON.PERSON"}, 
 {"MyDate":"AMAZON.DATE"}
-,"utterances": "read {my|Person} calendar for {today|MyDate}"
+,"utterances": [ "read {my|Person} calendar for {today|MyDate}"]
 } 
-
-)
+);  
 
 module.exports = app;
