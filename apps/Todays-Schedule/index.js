@@ -20,7 +20,7 @@ app.error = function( exception, request, response ) {
 app.intent('AMAZON.ReadAction<Object@Calednar>',
   {
     "slots":{"day":"DAY"},
-    "slots":{"person":"PERSON"},
+    "slots":{"person":"PERSON"}
 
 	,"utterances":[ 
 		"read {my|person} schedule for {monday|day}"]
