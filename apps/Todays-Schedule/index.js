@@ -26,9 +26,8 @@ app.intent('AMAZON.ReadAction<Object@Calendar>'
   },
   function(request,response) {
     var number = request.slot('MyDate');
-    response.say("You asked for the date "+date);
+    response.say("You asked for the date"+date);
   }
-)
 );
 
 
