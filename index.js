@@ -17,7 +17,7 @@ app.error = function( exception, request, response ) {
 	response.say( 'Sorry an error occured ' + error.message);
 };
 
-app.intent('AMAZON.Readaction<Object@Calednar>',
+app.intent('AMAZON.ReadAction<Object@Calednar>',
   {
     "slots":{"day":"DAY"}
 	,"utterances":[ 
