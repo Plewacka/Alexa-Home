@@ -26,7 +26,7 @@ app.intent('AMAZON.ReadAction<Object@Calendar>',
 		"read {my|Person} calendar for {monday|MyDate}"]
   },
   function(request,response) {
-    var number = request.slot('day');
+    var number = request.slot('MyDate');
     response.say("You asked for the day "+monday);
   }
 );
