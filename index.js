@@ -18,6 +18,7 @@ app.error = function( exception, request, response ) {
 };
 
 app.intent('AMAZON.ReadAction<Object@Calendar>'
+{
 	 "slots":{"Person":"AMAZON.PERSON"}, 
 {"MyDate":"AMAZON.DATE"}
 ,"utterances": [ "read {my|Person} calendar for {today|MyDate}"]
