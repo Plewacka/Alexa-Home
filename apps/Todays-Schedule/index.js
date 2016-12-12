@@ -24,6 +24,5 @@ app.intent('AMAZON.ReadAction<Object@Calendar>',
 
 	,"utterances":[ 
 		"read {my|Person} calendar for {today|MyDate}"]
-);
 
 module.exports = app;
