@@ -19,9 +19,11 @@ app.error = function( exception, request, response ) {
 
 app.intent('AMAZON.ReadAction<Object@Calednar>',
   {
-    "slots":{"day":"DAY"}
+    "slots":{"day":"DAY"},
+    "slots":{"person":"PERSON"},
+
 	,"utterances":[ 
-		"read my schedule for monday"]
+		"read {my|person} schedule for {monday|day}"]
   },
   function(request,response) {
     var number = request.slot('day');
